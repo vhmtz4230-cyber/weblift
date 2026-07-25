@@ -340,7 +340,6 @@ h1, h2, h3 { font-weight: 800; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.75rem;
-  max-width: 32em;
 }
 .testimonial-card {
   background: var(--bg);
