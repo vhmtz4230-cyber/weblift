@@ -232,18 +232,6 @@ h1, h2, h3 { font-weight: 800; }
 }
 .portfolio-card:hover { border-color: var(--text); }
 
-.portfolio-image-placeholder {
-  aspect-ratio: 16 / 10;
-  background: #E6E3DE;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  text-align: center;
-  padding: 1rem;
-}
-
 .portfolio-image {
   aspect-ratio: 1900 / 929;
   overflow: hidden;
