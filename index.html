@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebLift — Diseño de páginas web para restaurantes y negocios en CDMX</title>
-  <meta name="description" content="Sitios web profesionales para restaurantes y negocios locales en Ciudad de México. Diseño 100% personalizado, entrega en 7–10 días. Elevamos tu negocio.">
+  <meta name="description" content="Sitios web profesionales para restaurantes y negocios locales en Ciudad de México. Diseño 100% personalizado, entrega en 2–5 días. Elevamos tu negocio.">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="WebLift — Elevamos tu negocio">
-  <meta property="og:description" content="Sitios web profesionales para restaurantes y negocios locales en Ciudad de México, entregados en 7–10 días.">
+  <meta property="og:description" content="Sitios web profesionales para restaurantes y negocios locales en Ciudad de México, entregados en 2–5 días.">
   <meta property="og:image" content="/logo.png">
   <meta property="og:locale" content="es_MX">
 
@@ -37,6 +37,7 @@
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#portafolio">Portafolio</a></li>
           <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#contacto">Contacto</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
@@ -56,67 +57,137 @@
 
     <!-- HERO -->
     <section class="hero">
+      <div class="hero-content reveal">
+        <span class="hero-logo-badge">
+          <img src="/logo.png" alt="" width="34" height="34" onerror="this.style.display='none'">
+        </span>
+        <h1>Tu negocio merece un sitio web que venda</h1>
+        <p class="hero-subtitle">Sitios web profesionales para restaurantes y negocios locales, entregados en 2–5 días.</p>
+        <div class="hero-actions">
+          <a href="#portafolio" class="btn btn-secondary">Ver un ejemplo real</a>
+          <a href="#" class="btn btn-primary js-whatsapp" data-message="Hola, me gustaría cotizar un sitio web para mi negocio.">Cotizar por WhatsApp</a>
+        </div>
+        <p class="trust-bar">Entrega en 2–5 días · Diseño 100% personalizado · Soporte directo</p>
+      </div>
+      <a href="#carrusel" class="hero-scroll-cue" aria-label="Bajar">&#8595;</a>
+    </section>
+
+    <!-- CARRUSEL DE PROYECTOS -->
+    <section class="carousel-section" id="carrusel">
       <div class="container">
-        <div class="reveal">
-          <h1>Tu negocio merece un sitio web que venda</h1>
-          <p class="hero-subtitle">Sitios web profesionales para restaurantes y negocios locales, entregados en 10 días.</p>
-          <div class="hero-actions">
-            <a href="#portafolio" class="btn btn-secondary">Ver un ejemplo real</a>
-            <a href="#" class="btn btn-primary js-whatsapp" data-message="Hola, me gustaría cotizar un sitio web para mi negocio.">Cotizar por WhatsApp</a>
+        <div class="carousel-head">
+          <div>
+            <h2 class="reveal">Así se ven los sitios que construimos</h2>
+            <p class="section-intro reveal" style="margin-bottom:0;">Capturas reales de proyectos entregados, no plantillas.</p>
           </div>
-          <p class="trust-bar">Entrega en 7–10 días · Diseño 100% personalizado · Soporte directo</p>
+          <div class="carousel-arrows">
+            <button type="button" class="carousel-arrow prev" aria-label="Ver proyecto anterior">&#8592;</button>
+            <button type="button" class="carousel-arrow next" aria-label="Ver siguiente proyecto">&#8594;</button>
+          </div>
+        </div>
+
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <div class="shot-frame">
+              <div class="shot-chrome"><span></span><span></span><span></span></div>
+              <img src="images/vjump-screenshot.png" alt="Captura del sitio de VJump" loading="lazy">
+            </div>
+            <div class="shot-caption">
+              <p class="source">VJump</p>
+              <h3>Plataforma de entrenamiento de salto vertical</h3>
+              <p>Hecho para un influencer de fitness con 27k seguidores. Programa de 13 semanas, biblioteca de ejercicios en video y pagos con Stripe.</p>
+              <a href="https://vjump.netlify.app/" target="_blank" rel="noopener noreferrer" class="link-arrow">Ver sitio en vivo →</a>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="shot-frame">
+              <div class="shot-chrome"><span></span><span></span><span></span></div>
+              <img src="images/menta65-screenshot.png" alt="Captura del sitio de Menta 65" loading="lazy">
+            </div>
+            <div class="shot-caption">
+              <p class="source">Menta 65</p>
+              <h3>Restaurante con pizza de horno de leña y terraza</h3>
+              <p>Menú, reseñas de Google y ubicación integrados en un solo sitio.</p>
+              <a href="https://menta65.netlify.app/" target="_blank" rel="noopener noreferrer" class="link-arrow">Ver sitio en vivo →</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SERVICIOS / BENEFICIOS -->
-    <section class="section section-alt" id="servicios">
+    <!-- SECCIONES ALTERNADAS -->
+    <section id="servicios">
       <div class="container">
-        <h2 class="reveal">Lo que le da a tu negocio</h2>
-        <div class="benefits-grid">
 
-          <div class="benefit-card reveal">
-            <span class="icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
-            </span>
-            <h3>Toda tu información en un solo lugar</h3>
-            <p>Menú, horarios, ubicación y contacto claros y actualizados, sin depender de que alguien te encuentre por casualidad en redes sociales.</p>
+        <div class="alt-section reveal">
+          <div class="alt-media">
+            <div class="shot-frame">
+              <div class="shot-chrome"><span></span><span></span><span></span></div>
+              <img src="images/vjump-screenshot.png" alt="Captura del sitio de VJump" loading="lazy">
+            </div>
           </div>
-
-          <div class="benefit-card reveal">
-            <span class="icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
-            </span>
-            <h3>Tu menú siempre actualizado</h3>
-            <p>Cambia precios, platillos o promociones cuando lo necesites, sin depender de nadie más para mantener tu sitio al día.</p>
+          <div class="alt-text">
+            <span class="eyebrow">Un mensaje claro desde el primer segundo</span>
+            <h2>Que cualquiera entienda qué vendes en 5 segundos</h2>
+            <p>Titular directo, garantía y botón de acción, todo en la primera pantalla, sin que tengan que buscarle.</p>
+            <a href="#portafolio" class="btn btn-secondary">Ver portafolio</a>
+            <p class="alt-credit">Ejemplo: sitio de VJump</p>
           </div>
-
-          <div class="benefit-card reveal">
-            <span class="icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-            </span>
-            <h3>Más clientes por WhatsApp</h3>
-            <p>Un botón directo en tu sitio para que quien te visite pueda escribirte y hacer su pedido o reservación en segundos.</p>
-          </div>
-
         </div>
+
+        <div class="alt-section reverse reveal">
+          <div class="alt-media">
+            <div class="shot-frame">
+              <div class="shot-chrome"><span></span><span></span><span></span></div>
+              <img src="images/menta65-screenshot.png" alt="Captura del sitio de Menta 65" loading="lazy">
+            </div>
+          </div>
+          <div class="alt-text">
+            <span class="eyebrow">Tu menú, siempre actualizado</span>
+            <h2>Cambia precios y platillos cuando lo necesites</h2>
+            <p>Sin depender de nadie más para mantener tu sitio al día.</p>
+            <a href="#incluye" class="btn btn-secondary">Qué incluye tu sitio</a>
+            <p class="alt-credit">Ejemplo: sitio de Menta 65</p>
+          </div>
+        </div>
+
+        <div class="alt-section reveal">
+          <div class="alt-media">
+            <div class="shot-frame">
+              <div class="shot-chrome"><span></span><span></span><span></span></div>
+              <img src="images/vjump-shot-testimonios.png" alt="Testimonios en video de alumnos de VJump" loading="lazy">
+            </div>
+          </div>
+          <div class="alt-text">
+            <span class="eyebrow">Resultados reales, no inventados</span>
+            <h2>Que tus clientes hablen por ti</h2>
+            <p>Videos y comentarios reales de quienes ya lo probaron. Nada de reseñas genéricas ni inventadas.</p>
+            <a href="#" class="btn btn-secondary js-whatsapp" data-message="Hola, quiero cotizar un sitio web para mi negocio.">Cotizar por WhatsApp</a>
+            <p class="alt-credit">Ejemplo: sitio de VJump</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- PORTAFOLIO -->
-    <section class="section" id="portafolio">
+    <section class="section section-alt" id="portafolio">
       <div class="container">
         <h2 class="reveal">Portafolio</h2>
         <p class="section-intro reveal">Este es un proyecto real, ya en línea.</p>
 
         <div class="portfolio-grid">
           <article class="portfolio-card portfolio-card-featured reveal">
-            <div class="portfolio-image">
-              <img src="images/vjump-screenshot.png" alt="Captura del sitio web de VJump, plataforma de entrenamiento de salto vertical" loading="lazy" width="1920" height="929">
+            <div class="portfolio-image fade-slideshow">
+              <img src="images/vjump-screenshot.png" alt="Captura del sitio web de VJump, plataforma de entrenamiento de salto vertical" loading="lazy" class="is-active">
+              <img src="images/vjump-shot-sistema.png" alt="Sección Cómo funciona VJump" loading="lazy">
+              <img src="images/vjump-shot-testimonios.png" alt="Testimonios en video de alumnos de VJump" loading="lazy">
+              <img src="images/vjump-shot-cta.png" alt="Llamado a la acción del sitio de VJump" loading="lazy">
             </div>
             <div class="portfolio-content">
               <h3>VJump</h3>
-              <p>Plataforma de entrenamiento de salto vertical.</p>
+              <p>Plataforma de entrenamiento de salto vertical, hecha para un influencer de fitness con 27k seguidores.</p>
               <ul class="portfolio-bullets">
                 <li>Programa de 13 semanas con seguimiento de progreso</li>
                 <li>Biblioteca de más de 22 ejercicios en video</li>
@@ -130,7 +201,7 @@
     </section>
 
     <!-- QUÉ INCLUYE -->
-    <section class="section section-alt" id="incluye">
+    <section class="section" id="incluye">
       <div class="container">
         <h2 class="reveal">Qué incluye tu sitio web</h2>
         <p class="section-intro reveal">Cada negocio es diferente, pero todo sitio WebLift incluye:</p>
@@ -153,7 +224,7 @@
     </section>
 
     <!-- PROCESO -->
-    <section class="section" id="proceso">
+    <section class="section section-alt" id="proceso">
       <div class="container">
         <h2 class="reveal">Proceso</h2>
 
@@ -180,12 +251,12 @@
           </li>
         </ol>
 
-        <p class="process-footer reveal">Entrega en 7–10 días hábiles.</p>
+        <p class="process-footer reveal">Entrega en 2–5 días hábiles.</p>
       </div>
     </section>
 
     <!-- TESTIMONIOS -->
-    <section class="section section-alt" id="testimonios">
+    <section class="section" id="testimonios">
       <div class="container">
         <h2 class="reveal">Testimonios</h2>
         <div class="testimonials-grid">
@@ -197,8 +268,29 @@
       </div>
     </section>
 
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <h2 class="reveal">Contacto</h2>
+        <p class="section-intro reveal">Cotización gratis y sin compromiso, directo por WhatsApp.</p>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3>WhatsApp</h3>
+            <p>La forma más rápida de platicar sobre tu sitio.</p>
+            <a href="#" class="link-arrow js-whatsapp" data-message="Hola, quiero cotizar un sitio web para mi negocio.">Escríbenos por WhatsApp →</a>
+          </div>
+          <div class="contact-card reveal">
+            <h3>Instagram</h3>
+            <p>Más ejemplos de nuestro trabajo.</p>
+            <a href="https://instagram.com/web.lift1" target="_blank" rel="noopener noreferrer" class="link-arrow">@web.lift1 →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- FAQ -->
-    <section class="section" id="faq">
+    <section class="section section-alt" id="faq">
       <div class="container">
         <h2 class="reveal">Preguntas frecuentes</h2>
 
@@ -232,7 +324,7 @@
               </button>
             </h3>
             <div class="accordion-panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3" hidden>
-              <p>Entre 7 y 10 días hábiles, dependiendo de qué tan rápido recibamos tu material.</p>
+              <p>Entre 2 y 5 días hábiles, dependiendo de qué tan rápido recibamos tu material.</p>
             </div>
           </div>
 
@@ -296,6 +388,19 @@
       <p class="footer-copy">© 2026 WebLift.</p>
     </div>
   </footer>
+
+  <!-- BARRA FIJA MÓVIL -->
+  <nav class="mobile-bar" aria-label="Acciones rápidas">
+    <a href="#" class="primary js-whatsapp" data-message="Hola, quiero cotizar un sitio web para mi negocio.">
+      <span class="icon">&#128222;</span> WhatsApp
+    </a>
+    <a href="#portafolio">
+      <span class="icon">&#128187;</span> Portafolio
+    </a>
+    <a href="https://instagram.com/web.lift1" target="_blank" rel="noopener noreferrer">
+      <span class="icon">&#128247;</span> Instagram
+    </a>
+  </nav>
 
   <script src="js/main.js" defer></script>
 </body>

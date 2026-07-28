@@ -14,6 +14,48 @@ function initWhatsAppLinks() {
   });
 }
 
+function initHeaderScroll() {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
+
+function initCarousels() {
+  document.querySelectorAll('.carousel-section').forEach((section) => {
+    const track = section.querySelector('.carousel-track');
+    const prev = section.querySelector('.carousel-arrow.prev');
+    const next = section.querySelector('.carousel-arrow.next');
+    if (!track) return;
+    const scrollByOne = (dir) => {
+      const slide = track.querySelector('.carousel-slide');
+      const amount = slide ? slide.getBoundingClientRect().width + 20 : track.clientWidth * 0.8;
+      track.scrollBy({ left: dir * amount, behavior: 'smooth' });
+    };
+    if (prev) prev.addEventListener('click', () => scrollByOne(-1));
+    if (next) next.addEventListener('click', () => scrollByOne(1));
+  });
+}
+
+function initFadeSlideshows() {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) return;
+
+  document.querySelectorAll('.fade-slideshow').forEach((el) => {
+    const slides = el.querySelectorAll('img');
+    if (slides.length < 2) return;
+    let index = Array.from(slides).findIndex((img) => img.classList.contains('is-active'));
+    if (index < 0) index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove('is-active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('is-active');
+    }, 3500);
+  });
+}
+
 function initMobileMenu() {
   const toggle = document.getElementById('menu-toggle');
   const nav = document.getElementById('main-nav');
@@ -80,6 +122,9 @@ function initScrollReveal() {
 
 document.addEventListener('DOMContentLoaded', () => {
   initWhatsAppLinks();
+  initHeaderScroll();
+  initCarousels();
+  initFadeSlideshows();
   initMobileMenu();
   initAccordion();
   initScrollReveal();
