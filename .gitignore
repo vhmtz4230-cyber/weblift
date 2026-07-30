@@ -3,3 +3,7 @@ node_modules/
 
 # Local Netlify folder
 .netlify
+
+# Google Places API key
+prospects/.env
+prospects/leads-*.csv

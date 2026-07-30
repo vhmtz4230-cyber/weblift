@@ -81,11 +81,11 @@ h1, h2, h3 { font-weight: 800; }
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: 0.01em;
-  transition: background var(--transition), color var(--transition), border-color var(--transition), transform var(--transition);
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
   border: 1.5px solid transparent;
   white-space: nowrap;
 }
-.btn:hover { transform: translateY(-1px); }
+.btn:hover { transform: translateY(-1px); } /* fallback si GSAP no carga */
 
 .btn-primary { background: var(--text); color: var(--bg); }
 .btn-primary:hover { background: #2b2b2b; }
@@ -216,6 +216,9 @@ h1, h2, h3 { font-weight: 800; }
   margin: 0 auto 1.25rem;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
 }
+/* Máscara para el reveal de texto palabra por palabra (ver initHeroIntro en main.js) */
+.word-mask { display: inline-block; overflow: hidden; vertical-align: top; }
+.word-inner { display: inline-block; will-change: transform; }
 .hero-subtitle {
   font-size: clamp(1rem, 2vw, 1.2rem);
   color: rgba(255, 255, 255, 0.85);
@@ -259,6 +262,7 @@ h1, h2, h3 { font-weight: 800; }
   overflow: hidden;
   background: #fff;
 }
+.shot-frame img { transform-origin: center; }
 .shot-chrome {
   display: flex;
   gap: 5px;
@@ -625,18 +629,19 @@ h1, h2, h3 { font-weight: 800; }
 }
 
 /* ---------- Scroll reveal ---------- */
+/* La animación de opacidad/transform la controla GSAP (ScrollTrigger) en JS.
+   Sin transition aquí para no pelearse frame a frame con el tween de GSAP. */
 .reveal {
   opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 600ms ease, transform 600ms ease;
+  transform: translateY(40px) scale(0.96);
 }
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal { opacity: 1; transform: none; transition: none; }
+  .reveal { opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
 }
 
